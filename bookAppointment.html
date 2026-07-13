@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book appointment</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bookAppointment.css">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+  
+    <!-- carousel links -->
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+    <!-- adding animation effect----------------- -->
+    <link rel="stylesheet" href="./css/aos.css" />
+
+    <!--x adding animation effect--------x--------- -->
+    <!-------x-- carousel links -------x-->
+
+    <!-- js -->
+    <script src="./js/all.js"></script>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/fontawesome.min.js"></script>
+  </head>
+  <body>
+    <!-- ============THE NAV================ -->
+    <nav class="navbar">
+      <div class="logo-navbtn">
+        <img src="./images/logo.jpeg" alt="" />
+        <div class="nav-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <div class="side-bar-div">
+          <h1>my app</h1>
+          <button type="button" class="close">X</button>
+        </div>
+        <li>
+          <a href="index.html" class="nav-single-links">
+            <i class="fas fa-home" id="one"></i> home</a
+          >
+        </li>
+        <li>
+          <a href="contact.html" class="nav-single-links"
+            ><i class="fas fa-phone" id="one"></i> contact</a
+          >
+        </li>
+        <li>
+          <a href="about.html" class="nav-single-links"
+            ><i class="fas fa-home" id="one"></i> about us</a
+          >
+        </li>
+        <li>
+          <a href="freemedics.html" class="nav-single-links"
+            ><i class="fa fa-medkit" id="one"></i> free medics</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-single-links">
+            <i class="fas fa-user" id="one"></i> consultation</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- ======X======THE NAV=========X======= -->
+    <!--  -->
+    <!-- ============BOOK APPOINTMENT MAIN CONTENT================ -->
+    <section class="book-app-main">
+      <div class="book-app-title">
+        <h3>welcome</h3>
+        <p>
+          You have choosed the right path to healthy living and wealth
+          afterwards
+        </p>
+    
+      
+      </div>
+      <!--  -->
+
+      <article class="article-first-child book-app-article">
+        <!-- ===doctor info==== -->
+        <div class="doc-info-grid">
+
+        <div class="doctor-info">
+          <h3 class="doc-full-name">Name: <span id="doc-full-name">Michael Akpor</span></h3>
+          <h3 class="doc-country">Country: <span>Nigeria
+          </span> </h3>
+          <h3 class="doc-specilaization">Specialization:<span>Anatomist</span></h3>
+          <p class="doc-full-info">
+            <span class="doc-name">Doctor Michael Akpor </span>is a well known medical doctor who specializes in human anotomy and general health practice, he has many years of
+            experience in this field and as such gained popularity due to the successfully recovery his patients have recorded in
+            the past years. <br>
+            With many succesful surgical opertions performed, he is still very much active and reliable to redeem you back to normalcy</p>
+        </div>
+        <!-- ======doctor======== -->
+        <div class="doctor">
+          <div class="available-doctor">
+            <div class="doctor-image">
+              <img
+                src="./images/doctor-1.jpeg"
+                alt=""
+                class="put-doctor-image-here"
+              />
+              <!-- <button class="doctor-icon">></button> -->
+            </div>
+            <!-- <h3 class="doctor-name">Dr. gabriel okoro
+               <h3 class="doctor-specialization">muscular surgeon</h3>
+               <h4 class="doctor-location">location: las vegas</h4>
+              </h3>
+              <span class="doctor-accepting-patients"><input type="checkbox">
+               <label>Accepting new patients</label>
+              </span>
+              <button class="meet-doctor">book appointment</button> -->
+            <a href="#" class="meet-doctor"
+              >see Dr. <span class="doc-name"></span> reviews</a
+            >
+          </div>
+        </div>
+        </div>
+        <!-- =====appointment form====== -->
+        <div class="appointment-form-container">
+          <div class="form-intro">
+            <h3>we would <i class="fas fa-heart"></i> to help you</h3>
+            <p>
+              please fill in your details to completely book your appointment
+            </p>
+          </div>
+          <form class="appointment-form" >
+            <div class="form-1 main-info">
+              <h5 class="error-message " id="form1-error"></h5>
+              <label for="first name">Name</label>
+              <input type="text" placeholder="first Name" id="firstN" />
+              <label for="last name">Name</label>
+              <input type="text" placeholder="last Name" id="lastN" />
+              <label for="gender">Gender</label>
+              <select name="gender" id="gender-select">
+                <option value=""  ></option>
+                <option value="male">Male</option>
+                <option value="male">Female</option>
+              </select>
+              <label for="age">age</label>
+              <input type="number" placeholder="Enter your age" id="age"/>
+              <label for="country">country</label>
+              <select name="country" id="country-select">
+                <option value=""></option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bonaire">Bonaire</option>
+                <option value="Bosnia & Herzegovina">
+                  Bosnia & Herzegovina
+                </option>
+                <option value="Botswana">Botswana</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Ter">
+                  British Indian Ocean Ter
+                </option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Canary Islands">Canary Islands</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">
+                  Central African Republic
+                </option>
+                <option value="Chad">Chad</option>
+                <option value="Channel Islands">Channel Islands</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos Island">Cocos Island</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cote DIvoire">Cote DIvoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curaco">Curacao</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="East Timor">East Timor</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Falkland Islands">Falkland Islands</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Guiana">French Guiana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Ter">French Southern Ter</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Great Britain">Great Britain</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Guam">Guam</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="India">India</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Korea North">Korea North</option>
+                <option value="Korea Sout">Korea South</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macau">Macau</option>
+                <option value="Macedonia">Macedonia</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Midway Islands">Midway Islands</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Nambia">Nambia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherland Antilles">Netherland Antilles</option>
+                <option value="Netherlands">
+                  Netherlands (Holland, Europe)
+                </option>
+                <option value="Nevis">Nevis</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau Island">Palau Island</option>
+                <option value="Palestine">Palestine</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Phillipines">Philippines</option>
+                <option value="Pitcairn Island">Pitcairn Island</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Republic of Montenegro">
+                  Republic of Montenegro
+                </option>
+                <option value="Republic of Serbia">Republic of Serbia</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="St Barthelemy">St Barthelemy</option>
+                <option value="St Eustatius">St Eustatius</option>
+                <option value="St Helena">St Helena</option>
+                <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                <option value="St Lucia">St Lucia</option>
+                <option value="St Maarten">St Maarten</option>
+                <option value="St Pierre & Miquelon">
+                  St Pierre & Miquelon
+                </option>
+                <option value="St Vincent & Grenadines">
+                  St Vincent & Grenadines
+                </option>
+                <option value="Saipan">Saipan</option>
+                <option value="Samoa">Samoa</option>
+                <option value="Samoa American">Samoa American</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Tahiti">Tahiti</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Erimates">
+                  United Arab Emirates
+                </option>
+                <option value="United States of America">
+                  United States of America
+                </option>
+                <option value="Uraguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Vatican City State">Vatican City State</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Virgin Islands (Brit)">
+                  Virgin Islands (Brit)
+                </option>
+                <option value="Virgin Islands (USA)">
+                  Virgin Islands (USA)
+                </option>
+                <option value="Wake Island">Wake Island</option>
+                <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zaire">Zaire</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+              <label for="disabilty">disabilty</label>
+              <select name="disabilty" id="disability-select">
+                <option value=""></option>
+                <option value="none">none</option>
+                <option value="none">deaf</option>
+                <option value="none">dumb</option>
+                <option value="none">cripple</option>
+                <option value="other">other</option>
+              </select>
+              <div class="state-disability">
+               <label for="disablity">state disabilty</label>
+              <input type="text" id="state-disability" placeholder=""/>
+              </div>
+              <button type="submit" class="btn btn-continue">continue</button>
+            </div>
+            <!--  -->
+            <div class="form-2 main-info">
+              <h5 class="error-message" id="form2-error"></h5>
+             <label for="relateabiltiy">relateabilty</label>
+              <select name="relateability" id="relateabilty-select">
+               <option value=""></option>
+               <option value="children">children</option>
+               <option value="children">adult</option>
+               <option value="children">both</option>
+              <select>
+               <label for="health">health situation</label>
+               <select name="health" id="health-select">
+                <option value=""></option>
+                <option value="cold">cold</option>
+                <option value="ill">ill</option>
+                <option value="ache">ache</option>
+                <option value="disease">disease</option>
+               </select>
+               <div class="state-disease">
+                <label for="disease">state disease</label>
+                <input type="text" placeholder="enter disease name" class="disease-name">
+               </div>
+               <!-- <input type="text" placeholder="Current health situation"> -->
+<br>
+               <label for="medical-report">do you have a medical report ?  </label>
+<label >Yes</label>
+<input type="radio" name="report" aria-checked="false" id="report-yes">
+<label>No</label>
+<input type="radio" name="report" id="report-no" aria-checked="false">
+<div class="upload-file" id="upload">
+  <p>please upload your previous medical report(s)</p>
+  <input type="file" name="" id="file">
+</div>
+<button class="submit-btn" type="submit">submit</button>
+</form>
+            </div>
+        </div>
+        
+      </article>
+    </section>
+    <!-- ======X======BOOK APPOINTMENT MAIN CONTENT=======X========= -->
+    <!--  -->
+    <!-- ============THE FOOTER================ -->
+    <footer>
+      <div class="footer-title">
+        <h3>health is wealth, therefore <span>prioritize </span>health</h3>
+      </div>
+
+      <article
+        class="section-first-child"
+        data-aos="flip-right"
+        data-aos-delay="200"
+      >
+        <section class="links-and-social">
+          <div class="footer-links">
+            <div class="translate-links">
+              <div class="translated-box">
+                <h1><i class="fas fa-link"></i></h1>
+              </div>
+              <h4>Links</h4>
+            </div>
+            <ul class="footer-links-ul">
+              <li>
+                <a href="index.html"> home</a>
+              </li>
+              <li>
+                <a href="contact.html">contact</a>
+              </li>
+              <li>
+                <a href="about.html"> about us</a>
+              </li>
+              <li>
+                <a href="freemedics.html">free medics</a>
+              </li>
+              <li>
+                <a href="#"> consultation</a>
+              </li>
+            </ul>
+          </div>
+          <!-- social icons side -->
+          <div class="footer-social-medial-icons">
+            <div class="translate-links">
+              <div class="translated-box">
+                <h1><i class="fas fa-link"></i></h1>
+              </div>
+              <h4>social</h4>
+            </div>
+            <ul class="footer-icons-ul">
+              <li>
+                <a href="#"> <i class="fab fa-facebook" id="ft-ic"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter" id="ft-ic"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram" id="ft-ic"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-yahoo" id="ft-ic"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="fab fa-youtube" id="ft-ic"></i></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+      <section class="copyright-text">
+        <p>
+          people care medical home. all rights reserved &copy;
+          <span class="footer-copy-year">2014-2021</span>
+        </p>
+      </section>
+    </footer>
+    <!-- ======X======THE FOOTER=========X======= -->
+
+    <!-- ---------  JQuery----------- -->
+    <script src="./js/jquery.js"></script>
+    <!--x---------  JQuery-----------x-->
+    <!-- -----------  olw carousel ----------- -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- adding animation effect----------------- -->
+    <script src="./js/aos.js"></script>
+    <!--x adding animation effect--------x--------- -->
+
+    <!--x -----------  olw carousel ----------- x-->
+    <script src="./js/jqueryScript.js"></script>
+    <script src="./js/bookAppointment.js"></script>
+
+
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

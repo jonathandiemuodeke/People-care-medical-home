@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <input type="text" />
+      <input type="text" />
+      <input type="radio" name="rad" aria-checked="false" id="rad" />
+      <input type="radio" name="rad" id="rad2" />
+
+      <button type="submit" id="btn">submit</button>
+    </form>
+
+    <script>
+      const form = document.querySelector("#form");
+      const btn = document.querySelector("#btn");
+      const rad1 = document.querySelector("#rad");
+      const rad2 = document.querySelector("#rad2");
+
+      // console.dir(rad1);
+
+      form.addEventListener("submit", submit);
+
+      function submit(e) {
+        e.preventDefault();
+        if (rad1.checked) {
+          document.body.style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
