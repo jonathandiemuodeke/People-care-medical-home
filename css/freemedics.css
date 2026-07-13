@@ -1,0 +1,282 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  /* background-color: azure; */
+  background-color: rgba(0, 0, 0, 0.062);
+}
+.main-section {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 131px;
+}
+.main-section h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.title-underline {
+  width: 15%;
+  border: 3px dotted rgb(118, 148, 118);
+  margin: 0 auto;
+  transform: skewX(40deg);
+}
+.title-div p::first-letter {
+  font-size: 70px;
+}
+@media screen and (min-width: 500px) {
+  .title-underline {
+    width: 5%;
+  }
+}
+.main-section p {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.no-medics-paragraph {
+  font-size: 20px;
+  font-weight: bold;
+}
+.about-center {
+  width: 90%;
+  /* border: 2px solid red; */
+  margin: 30px auto 20px auto;
+}
+.image-article,
+.info-article {
+  width: 90%;
+  margin: 0 auto;
+}
+.info-article {
+  background-color: white;
+  padding: 0 10px;
+}
+
+.image-article img {
+  width: 100%;
+  border-radius: 10px;
+  /* border: 2px solid orangered; */
+  border: 2px solid rgb(118, 148, 118) !important;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(54, 43, 199, 0.39);
+}
+.tab-btn {
+  flex: 0 0 33%;
+  padding: 10px 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-right: 1px solid gray;
+  cursor: pointer;
+  transition: 0.8s linear;
+  color: saddlebrown;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.tab-btn:last-child {
+  border-right: none;
+}
+.btn-container .active {
+  background-color: white;
+}
+/* button design ends here */
+.about-content {
+  width: 100%;
+  /* border: 2px solid blue; */
+  margin-top: 2rem;
+}
+/* single items */
+.content {
+  /* display: none; */
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 3px;
+  text-align: left;
+}
+.content h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.about-content .active {
+  display: block;
+}
+
+/*  =======form and feedback section =====*/
+.form-div {
+  width: 100%;
+  background: transparent;
+}
+.feedback {
+  width: 50%;
+  margin: 5px 0 5px 0;
+}
+#form {
+  /* border: 2px solid red; */
+  width: 100%;
+  padding: 10px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#form input,
+textarea,
+#testimony-btn,
+.error {
+  width: 85%;
+  margin-top: 10px;
+  resize: none;
+}
+textarea {
+  height: fit-content;
+}
+.error {
+  color: saddlebrown;
+  text-transform: capitalize;
+}
+.error-input {
+  box-shadow: none !important;
+  border: 2px solid #b8b8b8 !important;
+}
+#name,
+#testimony {
+  background: transparent;
+  padding: 10px 6px;
+  color: rgb(81, 138, 81);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  outline: none;
+  border: 1.5px solid black;
+  border-radius: 20px;
+}
+#name:focus,
+#testimony:focus {
+  /* background-color: rgba(216, 191, 216, 0.836); */
+  background: white;
+}
+#name::placeholder,
+#testimony::placeholder {
+  color: rgb(118, 148, 118);
+  font-weight: 100;
+  font-size: 14px;
+}
+#testimony-btn {
+  padding: 10px 20px;
+  background-color: rgba(81, 138, 81, 0.808);
+  border-radius: 20px;
+  outline: none;
+  color: bisque;
+  border: 1.7px solid gray;
+  font-weight: bold;
+  transition: all 1s linear;
+}
+#testimony-btn:hover {
+  background-color: rgb(81, 138, 81);
+  color: white;
+}
+
+/* end of form and feedback */
+/* media 740px width */
+@media screen and (min-width: 740px) {
+  .about-center {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid green; */
+    /* max-height: 300px; */
+  }
+  .image-article,
+  .info-article {
+    flex: 0 0 45%;
+  }
+  .image-article {
+    max-height: 300px;
+  }
+  .info-article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  .image-single {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    /* display: block; */
+  }
+  .about-content {
+    margin-top: 0;
+  }
+  .form-div {
+    background: url("../images/consult-nurse.jpeg");
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+  #form {
+    width: 50%;
+  }
+  #form input,
+  textarea,
+  #testimony-btn,
+  .error {
+    width: 60%;
+  }
+}
+/* big screen */
+@media screen and (min-width: 820px) {
+  .main-section {
+    padding: 50px 20px;
+  }
+  .about-center {
+    width: 90%;
+    min-height: 70vh;
+  }
+
+  .image-article,
+  .info-article {
+    flex: 0 0 45%;
+  }
+  .image-article {
+    max-height: 350px;
+  }
+  .info-article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .image-single {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    /* display: block; */
+  }
+  .about-content {
+    margin-top: 3%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-section {
+    margin-top: 81px;
+  }
+}
